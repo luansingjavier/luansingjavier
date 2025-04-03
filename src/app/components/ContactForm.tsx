@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 type ContactFormProps = {
   isSubmitting: boolean;
@@ -25,121 +26,155 @@ export default function ContactForm({
 }: ContactFormProps) {
   const form = useRef<HTMLFormElement>(null);
 
+  const inputClasses =
+    "w-full px-4 py-3 bg-gray-800/70 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all";
+
   return (
     <div suppressHydrationWarning>
       <form
         ref={form}
-        className="space-y-4"
+        className="space-y-6"
         onSubmit={handleSubmit}
         suppressHydrationWarning
       >
         <input type="hidden" name="to_email" value="luansingjavier@gmail.com" />
 
         <div>
-          <label htmlFor="name" className="block text-gray-300 mb-2">
-            Name
+          <label
+            htmlFor="name"
+            className="block text-gray-300 mb-2 text-sm font-medium"
+          >
+            Your Name
           </label>
-          <input
+          <motion.input
+            whileFocus={{ scale: 1.01 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             type="text"
             id="name"
             name="from_name"
             value={formState.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded bg-gray border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
-            placeholder="Your name"
+            className={inputClasses + " backdrop-blur-sm"}
+            placeholder="Enter your name"
             required
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-gray-300 mb-2">
-            Email
+          <label
+            htmlFor="email"
+            className="block text-gray-300 mb-2 text-sm font-medium"
+          >
+            Your Email
           </label>
-          <input
+          <motion.input
+            whileFocus={{ scale: 1.01 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             type="email"
             id="email"
             name="reply_to"
             value={formState.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded bg-gray border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
-            placeholder="Your email"
+            className={inputClasses + " backdrop-blur-sm"}
+            placeholder="Enter your email"
             required
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-gray-300 mb-2">
-            Message
+          <label
+            htmlFor="message"
+            className="block text-gray-300 mb-2 text-sm font-medium"
+          >
+            Your Message
           </label>
-          <textarea
+          <motion.textarea
+            whileFocus={{ scale: 1.01 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             id="message"
             name="message"
             rows={4}
             value={formState.message}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded bg-gray border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-accent"
-            placeholder="Your message"
+            className={inputClasses + " backdrop-blur-sm resize-none"}
+            placeholder="What would you like to discuss?"
             required
-          ></textarea>
+          ></motion.textarea>
         </div>
 
-        <button
+        <motion.button
           type="submit"
-          className="button w-full py-3 mt-4 flex justify-center items-center"
+          className="relative overflow-hidden group w-full py-3 px-6 flex justify-center items-center bg-accent text-white font-medium rounded-lg shadow-md shadow-accent/10"
           disabled={isSubmitting}
+          whileHover={{ scale: 1.01 }}
+          whileTap={{ scale: 0.98 }}
         >
-          {isSubmitting ? (
-            <span className="flex items-center">
-              <svg
-                className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
+          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-500 to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+          <span className="relative z-10 flex items-center">
+            {isSubmitting ? (
+              <>
+                <svg
+                  className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+                Sending...
+              </>
+            ) : (
+              <>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
                   stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                ></path>
-              </svg>
-              Sending...
-            </span>
-          ) : (
-            "Send Message"
-          )}
-        </button>
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+                Send Message
+              </>
+            )}
+          </span>
+        </motion.button>
 
         {submitMessage && (
-          <div
-            className={`mt-4 p-3 rounded ${
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={`mt-4 p-4 rounded-lg ${
               submitMessage.includes("error") ||
               submitMessage.includes("configure")
-                ? "bg-red-900/50 text-red-200"
-                : "bg-green-900/50 text-green-200"
+                ? "bg-red-900/30 text-red-200 border border-red-500/30"
+                : "bg-green-900/30 text-green-200 border border-green-500/30"
             }`}
           >
             {submitMessage}
-          </div>
+          </motion.div>
         )}
 
-        <div className="mt-6 p-4 bg-gray-800/50 rounded-lg border border-gray-700">
-          <p className="text-gray-300 text-sm">
-            If you don&apos;t receive a confirmation, please email me directly
-            at{" "}
-            <a
-              href="mailto:luansingjavier@gmail.com"
-              className="text-accent hover:underline"
-            >
-              luansingjavier@gmail.com
-            </a>
+        <div className="mt-4 p-3 bg-gray-800/20 rounded-lg border border-gray-700/50 text-center">
+          <p className="text-gray-400 text-sm">
+            I aim to respond within 24-48 hours
           </p>
         </div>
       </form>

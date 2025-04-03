@@ -66,14 +66,17 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent/30">
-            <Image
-              src="/profile.jpg"
-              alt="Javier Luansing"
-              fill
-              className="object-cover"
-              priority
-            />
+          <div className="relative group">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-blue-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-border-pulse"></div>
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-white/20 bg-black">
+              <Image
+                src="/profile.jpg"
+                alt="Javier Luansing"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
         </motion.div>
       </div>

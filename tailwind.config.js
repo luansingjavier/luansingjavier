@@ -14,6 +14,16 @@ module.exports = {
         gray: "var(--gray)",
         "gray-light": "var(--gray-light)",
       },
+      animation: {
+        "border-pulse": "border-pulse 3s ease-in-out infinite",
+      },
+      keyframes: {
+        "border-pulse": {
+          "0%": { boxShadow: "0 0 10px 0px rgba(148, 111, 255, 0.4)" },
+          "50%": { boxShadow: "0 0 20px 5px rgba(91, 169, 254, 0.6)" },
+          "100%": { boxShadow: "0 0 10px 0px rgba(148, 111, 255, 0.4)" },
+        },
+      },
     },
   },
   plugins: [],

@@ -48,7 +48,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 items-center">
           <a
             href="#about"
             className="text-white hover:text-accent-light transition-colors"
@@ -83,6 +83,13 @@ const Navbar = () => {
             onClick={(e) => scrollToSection(e, "contact")}
           >
             Contact
+          </a>
+          <a
+            href="#calendly"
+            className="text-accent font-medium hover:text-accent-light transition-colors border border-accent/50 rounded-full px-4 py-1.5 flex items-center"
+            onClick={(e) => scrollToSection(e, "calendly")}
+          >
+            Book a Call
           </a>
         </div>
 
@@ -192,6 +199,27 @@ const Navbar = () => {
             onClick={(e) => scrollToSection(e, "contact")}
           >
             Contact
+          </a>
+          <a
+            href="#calendly"
+            className="text-accent font-medium hover:text-accent-light transition-colors flex items-center justify-center border border-accent/50 rounded-full px-4 py-2 mt-2"
+            onClick={(e) => scrollToSection(e, "calendly")}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            Book a Call
           </a>
 
           <div className="flex items-center space-x-4 pt-2">
