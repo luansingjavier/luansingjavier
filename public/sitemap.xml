@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://luansingjavier.info/</loc>
+    <lastmod>2023-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luansingjavier.info/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://luansingjavier.info/en-us"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://luansingjavier.info/en-gb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://luansingjavier.info/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://luansingjavier.info/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://luansingjavier.info/de"/>
+  </url>
+  
+  <url>
+    <loc>https://luansingjavier.info/en-us</loc>
+    <lastmod>2023-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luansingjavier.info/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://luansingjavier.info/en-us"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://luansingjavier.info/en-gb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://luansingjavier.info/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://luansingjavier.info/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://luansingjavier.info/de"/>
+  </url>
+  
+  <url>
+    <loc>https://luansingjavier.info/en-gb</loc>
+    <lastmod>2023-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luansingjavier.info/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://luansingjavier.info/en-us"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://luansingjavier.info/en-gb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://luansingjavier.info/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://luansingjavier.info/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://luansingjavier.info/de"/>
+  </url>
+  
+  <url>
+    <loc>https://luansingjavier.info/es</loc>
+    <lastmod>2023-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luansingjavier.info/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://luansingjavier.info/en-us"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://luansingjavier.info/en-gb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://luansingjavier.info/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://luansingjavier.info/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://luansingjavier.info/de"/>
+  </url>
+  
+  <url>
+    <loc>https://luansingjavier.info/fr</loc>
+    <lastmod>2023-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luansingjavier.info/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://luansingjavier.info/en-us"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://luansingjavier.info/en-gb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://luansingjavier.info/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://luansingjavier.info/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://luansingjavier.info/de"/>
+  </url>
+  
+  <url>
+    <loc>https://luansingjavier.info/de</loc>
+    <lastmod>2023-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://luansingjavier.info/"/>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://luansingjavier.info/en-us"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://luansingjavier.info/en-gb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://luansingjavier.info/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://luansingjavier.info/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://luansingjavier.info/de"/>
+  </url>
+</urlset> 
