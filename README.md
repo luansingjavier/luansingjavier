@@ -1,37 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hi, I'm Javier Luansing!
 
-## Getting Started
+I'm a **Full-Stack & Mobile Developer** with **7+ years of experience** specializing in **React Native, React, and cloud-based solutions**. I build scalable, high-performance applications from design to deployment, leveraging **TypeScript, Node.js, PHP (Laravel, CodeIgniter)**.
 
-First, run the development server:
+## 🚀 What I Do
+- **Mobile & Web Development**: React Native, React, Expo, Next.js
+- **Backend & Cloud**: Node.js, Laravel, mySQL, CodeIgniter, PHP, Firebase
+- **Blockchain & Web3**: Working on a **Polymarket.com clone** for a Telegram Mini App
+- **DevOps & CI/CD**: Docker, Fastlane, AWS Microservices
+- **Security & Performance**: OAuth, GraphQL, REST APIs
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💼 Experience
+### **Tracktile** (Nov 2023 - Nov 2024) - *Full Stack Developer (Contract)*
+- Developed new features and user interfaces based on wireframe models.
+- Collaborated with full-stack developers and QA professionals to deliver robust solutions.
+- Utilized GitLab and Asana for seamless teamwork and project management.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Cloud Panda PH** (Apr 2022 - Jan 2023) - *React Native Developer*
+- Maintained and enhanced mobile apps for Android and iOS.
+- Created new features based on wireframe models.
+- Managed deployments to Google Play and App Stores.
+- Worked with GitHub and JIRA for project management.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Moment House** (Aug 2021 - May 2022) - *React Native Developer*
+- Developed and maintained mobile apps for Android and iOS.
+- Improved app performance and implemented new features.
+- Led code quality reviews and collaborated with cross-functional teams.
+- Worked with Bitbucket and JIRA in an Agile/Scrum environment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Maven Software Development** (Jul 2021 - Mar 2022) - *React Native Developer (Part-time)*
+- Maintained mobile apps and developed new UI features.
+- Created API endpoints to support mobile functionality.
+- Managed deployments and collaborated with designers and QA teams.
 
-## Learn More
+### **Catholic Connect** (May 2020 - Aug 2021) - *React Native Developer*
+- Built and maintained mobile apps for iOS and Android.
+- Deployed updates and ensured smooth app performance.
+- Worked with Bitbucket and JIRA for agile development.
 
-To learn more about Next.js, take a look at the following resources:
+### **Laravel Developer (Dec 2019 - Apr 2020)**
+- Developed and maintained web applications.
+- Created API endpoints and improved system performance.
+- Used Bitbucket and JIRA for project management.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎓 Education
+**Ateneo de Naga University**  
+*Bachelor of Science in Information Technology (2012 - 2016)*
+- Activities: Programming Challenge, Ateneo Innovation Center, TACTICS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 Certifications
+- **React, Node.js, Express & MongoDB - The MERN Fullstack Guide** (Udemy, Sep 2022)
+- **The Complete React Native + Hook Course** (Udemy, Sep 2022)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# luansingjavier
+💡 Open to **collaborations, freelance opportunities, and remote roles**! Feel free to connect. 🚀
