@@ -40,9 +40,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" className="text-xl font-bold text-white flex items-center">
+        <Link
+          href="/"
+          className="text-xl font-bold text-white flex items-center"
+        >
           <span className="text-accent">J</span>L
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
