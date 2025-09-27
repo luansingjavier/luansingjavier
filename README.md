@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Javier Luansing!
 
-I'm a **Full-Stack & Mobile Developer** with **7+ years of experience** specializing in **React Native, React, and cloud-based solutions**. I build scalable, high-performance applications from design to deployment, leveraging **TypeScript, Node.js, PHP (Laravel, CodeIgniter)**.
+I'm a **Full-Stack & Mobile Developer** with **8+ years of experience** specializing in **React Native, React, and cloud-based solutions**. I build scalable, high-performance applications from design to deployment, leveraging **TypeScript, Node.js, PHP (Laravel, CodeIgniter)**.
 
 ## 🚀 What I Do
 - **Mobile & Web Development**: React Native, React, Expo, Next.js
