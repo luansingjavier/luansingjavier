@@ -38,7 +38,7 @@ const Hero = () => {
             Full-Stack &amp; Mobile Developer
           </h2>
           <p className="text-lg text-gray-400 mb-8 max-w-xl">
-            With 7+ years of experience specializing in React Native, React, and
+            With 8+ years of experience specializing in React Native, React, and
             cloud-based solutions. I build scalable, high-performance
             applications from design to deployment.
           </p>
