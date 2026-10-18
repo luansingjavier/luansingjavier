@@ -8,21 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        bg: "var(--bg)",
+        ink: "var(--ink)",
+        "ink-80": "var(--ink-80)",
+        "ink-60": "var(--ink-60)",
+        "ink-10": "var(--ink-10)",
+        "ink-5": "var(--ink-5)",
         accent: "var(--accent)",
-        "accent-light": "var(--accent-light)",
-        "gray-dark": "var(--gray-dark)",
-        gray: "var(--gray)",
-        "gray-light": "var(--gray-light)",
+        success: "var(--success)",
+        error: "var(--error)",
       },
-      animation: {
-        "border-pulse": "border-pulse 3s ease-in-out infinite",
-      },
-      keyframes: {
-        "border-pulse": {
-          "0%": { boxShadow: "0 0 10px 0px rgba(148, 111, 255, 0.4)" },
-          "50%": { boxShadow: "0 0 20px 5px rgba(91, 169, 254, 0.6)" },
-          "100%": { boxShadow: "0 0 10px 0px rgba(148, 111, 255, 0.4)" },
-        },
+      fontFamily: {
+        serif: ["var(--font-habibi)", "Georgia", "Times New Roman", "serif"],
+        sans: ["var(--font-geist)", "system-ui", "sans-serif"],
       },
     },
   },

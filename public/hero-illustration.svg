@@ -1,0 +1,53 @@
+<!-- Original illustration for luansingjavier.info: developer in headphones coding on a laptop, with floating icons. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220" fill="none" stroke="#e55639" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Broken swooshes behind the figure -->
+  <path d="M112 118C64 132 30 126 34 108c3-14 32-28 70-36"/>
+  <path d="M190 64c40-10 72-6 74 8 2 12-20 26-54 38"/>
+  <path d="M176 40c10-12 24-16 30-10"/>
+  <path d="M96 166c-34 10-56 6-54-4 1-8 14-18 36-28"/>
+  <path d="M206 132c34 6 54 18 50 28-3 7-22 8-46 2"/>
+
+  <!-- Crossed legs (solid) -->
+  <path d="M96 176c0-14 22-20 54-14 32-6 54 0 54 14 0 12-24 14-54 8-30 6-54 4-54-8Z" fill="#e55639"/>
+  <path d="M122 174c18 8 38 8 56 0" stroke="#fbf5ef"/>
+  <path d="M100 182c-8 4-6 12 4 12h16" fill="#fbf5ef"/>
+  <path d="M200 182c8 4 6 12-4 12h-16" fill="#fbf5ef"/>
+
+  <!-- Torso and arms -->
+  <path d="M120 158c-4-32 4-58 30-58s34 26 30 58Z" fill="#fbf5ef"/>
+  <path d="M138 104c6 6 18 6 24 0"/>
+  <path d="M124 118c-12 12-14 28-6 40M176 118c12 12 14 28 6 40"/>
+
+  <!-- Head, hair, headphones -->
+  <path d="M150 100v-8"/>
+  <path d="M132 70c0-14 8-22 18-22s18 8 18 22c0 12-8 22-18 22s-18-10-18-22Z" fill="#fbf5ef"/>
+  <path d="M133 60c0-12 9-17 18-16 10 1 16 7 15 16-5-4-11-5-16-3-2 3-6 5-10 5-3 0-5-1-7-2Z" fill="#e55639"/>
+  <path d="M128 70c0-24 44-24 44 0"/>
+  <rect x="124" y="64" width="9" height="15" rx="4" fill="#e55639"/>
+  <rect x="167" y="64" width="9" height="15" rx="4" fill="#e55639"/>
+  <path d="M143 73v2.5M157 73v2.5"/>
+  <path d="M144 82c3 3 9 3 12 0"/>
+
+  <!-- Motion ticks -->
+  <path d="M112 104l-6-4M110 114l-8-1M188 104l6-4M190 114l8-1"/>
+
+  <!-- Laptop (solid, lid facing us) -->
+  <path d="M116 122l68-2c3 0 5 2 5 5l-2 38H113l-2-36c0-3 2-5 5-5Z" fill="#e55639"/>
+  <path d="M104 162h92c2 0 3 2 2 4l-4 4H106l-4-4c-1-2 0-4 2-4Z" fill="#e55639"/>
+  <path d="m143 136-6 6 6 6M157 136l6 6-6 6M152 133l-4 18" stroke="#fbf5ef" stroke-width="2"/>
+
+  <!-- Floating icons -->
+  <rect x="44" y="40" width="16" height="26" rx="3.5" fill="#fbf5ef"/>
+  <path d="M49 60h6"/>
+  <path d="M238 34c-4-7-16-4-13 5 2 6 13 12 13 12s11-6 13-12c3-9-9-12-13-5Z" fill="#e55639"/>
+  <path d="M232 168h18v14a4 4 0 0 1-4 4h-10a4 4 0 0 1-4-4Z" fill="#fbf5ef"/>
+  <path d="M250 172h3a4 4 0 0 1 0 8h-3M237 162c-2-3 2-4 0-7M244 162c-2-3 2-4 0-7"/>
+  <path d="M30 150h22a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H40l-6 5v-5h-4a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4Z" fill="#fbf5ef"/>
+  <circle cx="36" cy="158" r="1.4" fill="#e55639" stroke="none"/>
+  <circle cx="41" cy="158" r="1.4" fill="#e55639" stroke="none"/>
+  <circle cx="46" cy="158" r="1.4" fill="#e55639" stroke="none"/>
+  <path d="M96 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2Z" fill="#e55639" stroke="none"/>
+  <path d="M206 18l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5Z"/>
+  <circle cx="272" cy="118" r="2.5" fill="#e55639" stroke="none"/>
+  <circle cx="74" cy="198" r="2" fill="#e55639" stroke="none"/>
+</svg>

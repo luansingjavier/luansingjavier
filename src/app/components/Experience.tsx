@@ -1,143 +1,68 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
+import { experienceData } from "./profile";
 
-const experienceData = [
-  {
-    id: 1,
-    company: "Tracktile",
-    position: "Full Stack Developer (Contract)",
-    period: "Nov 2023 - Nov 2024",
-    description: [
-      "Developed new features and user interfaces based on wireframe models.",
-      "Collaborated with full-stack developers and QA professionals to deliver robust solutions.",
-      "Utilized GitLab and Asana for seamless teamwork and project management.",
-    ],
-  },
-  {
-    id: 2,
-    company: "Cloud Panda PH",
-    position: "React Native Developer",
-    period: "Apr 2022 - Jan 2023",
-    description: [
-      "Maintained and enhanced mobile apps for Android and iOS.",
-      "Created new features based on wireframe models.",
-      "Managed deployments to Google Play and App Stores.",
-      "Worked with GitHub and JIRA for project management.",
-    ],
-  },
-  {
-    id: 3,
-    company: "Moment House",
-    position: "React Native Developer",
-    period: "Aug 2021 - May 2022",
-    description: [
-      "Developed and maintained mobile apps for Android and iOS.",
-      "Improved app performance and implemented new features.",
-      "Led code quality reviews and collaborated with cross-functional teams.",
-      "Worked with Bitbucket and JIRA in an Agile/Scrum environment.",
-    ],
-  },
-  {
-    id: 4,
-    company: "Maven Software Development",
-    position: "React Native Developer (Part-time)",
-    period: "Jul 2021 - Mar 2022",
-    description: [
-      "Maintained mobile apps and developed new UI features.",
-      "Created API endpoints to support mobile functionality.",
-      "Managed deployments and collaborated with designers and QA teams.",
-    ],
-  },
-  {
-    id: 5,
-    company: "Catholic Connect",
-    position: "React Native Developer",
-    period: "May 2020 - Aug 2021",
-    description: [
-      "Built and maintained mobile apps for iOS and Android.",
-      "Deployed updates and ensured smooth app performance.",
-      "Worked with Bitbucket and JIRA for agile development.",
-    ],
-  },
-  {
-    id: 6,
-    company: "Laravel Developer",
-    position: "Web Developer",
-    period: "Dec 2019 - Apr 2020",
-    description: [
-      "Developed and maintained web applications.",
-      "Created API endpoints and improved system performance.",
-      "Used Bitbucket and JIRA for project management.",
-    ],
-  },
-];
+/** Square dot used in bullet lists and between inline details. */
+export const Dot = ({ size = 4 }: { size?: 3 | 4 }) => (
+  <span
+    aria-hidden
+    className={`shrink-0 bg-ink-60 ${size === 3 ? "h-[3px] w-[3px]" : "mt-2 h-1 w-1"}`}
+  />
+);
 
-const Experience = () => {
-  return (
-    <section id="experience" className="py-20 bg-black">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            Professional Experience
-          </h2>
-          <div className="w-20 h-1 bg-accent mx-auto"></div>
-        </motion.div>
+export const BulletList = ({ items }: { items: string[] }) => (
+  <ul className="flex max-w-[360px] flex-col gap-px">
+    {items.map((item) => (
+      <li key={item} className="flex items-start gap-2 text-sm text-ink-60">
+        <Dot />
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+);
 
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-accent"></div>
-
-          <div className="space-y-12">
-            {experienceData.map((exp, index) => (
-              <motion.div
-                key={exp.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center"
-              >
-                <div
-                  className={`md:text-right ${
-                    index % 2 === 1 ? "md:order-2" : ""
-                  }`}
-                >
-                  <h3 className="text-xl font-bold text-accent">
-                    {exp.company}
-                  </h3>
-                  <h4 className="text-lg font-semibold text-white">
-                    {exp.position}
-                  </h4>
-                  <p className="text-gray-400 mb-4">{exp.period}</p>
-                </div>
-
-                {/* Timeline dot */}
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-accent border-4 border-black"></div>
-
-                <div className={index % 2 === 1 ? "md:order-1" : ""}>
-                  <div className="bg-gray-dark p-6 rounded-lg shadow-lg">
-                    <ul className="list-disc list-inside space-y-2 text-gray-300">
-                      {exp.description.map((item, i) => (
-                        <li key={i}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+const Experience = () => (
+  <section id="experience" className="section gap-10">
+    <h2 className="h2">Experience</h2>
+    <div className="flex flex-col gap-8">
+      {experienceData.map((exp, index) => (
+        <article key={exp.company} className="flex items-stretch gap-4">
+          <div className="flex w-10 flex-none flex-col items-center pt-0.5">
+            <span
+              aria-hidden
+              className="flex h-10 w-10 items-center justify-center bg-ink text-xs font-medium tracking-normal text-bg"
+            >
+              {exp.initials}
+            </span>
+            {index < experienceData.length - 1 && (
+              <span aria-hidden className="mt-3.5 w-px flex-1 bg-ink-10" />
+            )}
           </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+
+          <div className="flex min-w-0 flex-1 flex-col gap-3 sm:flex-row-reverse sm:items-start sm:justify-between sm:gap-6">
+            <p className="whitespace-nowrap text-sm text-ink-60">
+              {exp.period}
+            </p>
+            <div className="flex flex-col gap-4 sm:flex-1">
+              <div className="flex flex-col gap-0.5">
+                <h3 className="h3">{exp.position}</h3>
+                <p className="flex flex-wrap items-center gap-2 text-sm text-ink-60">
+                  {[exp.company, exp.type, exp.location]
+                    .filter(Boolean)
+                    .map((detail, i) => (
+                      <React.Fragment key={detail}>
+                        {i > 0 && <Dot size={3} />}
+                        <span>{detail}</span>
+                      </React.Fragment>
+                    ))}
+                </p>
+              </div>
+              <BulletList items={exp.description} />
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+);
 
 export default Experience;
