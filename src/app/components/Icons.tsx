@@ -62,6 +62,14 @@ export const CalendarIcon = (p: IconProps) => (
   </Stroke>
 );
 
+export const ProfileIcon = (p: IconProps) => (
+  <Stroke {...p}>
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="9.5" r="3.5" />
+    <path d="M5.6 18.7c1.3-2.4 3.6-3.9 6.4-3.9s5.1 1.5 6.4 3.9" />
+  </Stroke>
+);
+
 export const ArrowRightIcon = (p: IconProps) => (
   <Stroke {...p}>
     <path d="M5 12h14M13 6l6 6-6 6" />

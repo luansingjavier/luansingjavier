@@ -30,7 +30,7 @@ There is no test suite. Verify changes with `npm run build` and by viewing the p
 - `src/app/page.tsx` redirects `/` to `/en-US`. `src/middleware.ts` redirects any path without a locale prefix, using the `Accept-Language` header and `src/app/i18n-config.ts`.
 - `pages/_document.tsx` is a leftover from the Pages Router. The App Router does not use it.
 - SEO files live in `public/` (`robots.txt`, `sitemap.xml`).
-- Site icons use Next.js file conventions in `src/app/`: `icon1.png` (32px, used for browser tabs), `icon2.png` (512px) and `apple-icon.png` (180px). Next.js links them with a content hash in the URL, so browsers pick up changes instead of showing a cached icon. `public/favicon.ico` (16/32/48px) only serves browsers that request `/favicon.ico` directly; it isn't linked from the page, so don't move it back into `src/app/`. The icons are circular crops of `public/profile.jpg` (the Apple icon is square, since iOS rounds its corners). The 16 and 32px sizes use a tighter crop on the face so it stays recognizable.
+- Site icons use Next.js file conventions in `src/app/`: `icon1.png` (32px, used for browser tabs), `icon2.png` (512px) and `apple-icon.png` (180px). Next.js links them with a content hash in the URL, so browsers pick up changes instead of showing a cached icon. `public/favicon.ico` (16/32/48px) only serves browsers that request `/favicon.ico` directly; it isn't linked from the page, so don't move it back into `src/app/`. The icons are square crops of `public/profile.jpg`. The 16 and 32px sizes use a tighter crop on the face so it stays recognizable.
 
 Page copy is hardcoded in English inside the components. The locale routes don't translate the content yet.
 
@@ -43,7 +43,7 @@ A warm, minimal resume layout inspired by kozoriz.com.
 - Fonts: `font-serif` (Habibi) for headings, `font-sans` (Geist) for everything else.
 - Shared classes in `globals.css` under `@layer components`: `h1`, `h2`, `h3`, `display`, `content`, `section`, `btn`, `btn-small`, `chip`, `field`, `muted-link`.
 - Content sections use `<section id="..." className="section gap-N">` with an `h2` heading. The `id` must match the menu links in `Navbar.tsx`.
-- Corners are square throughout. The only round elements are the `JL` logo and the company badges on the hero's "View Experience" button.
+- Corners are square throughout. The only round elements are the profile-icon logo in the menu (`ProfileIcon` in `Icons.tsx`) and the company badges on the hero's "View Experience" button.
 - The hero illustration, `public/hero-illustration.svg`, is an original line drawing made for this site (a developer in headphones coding on a laptop, with floating icons) in the accent color (#e55639) with cream (#fbf5ef) fills. `public/contact-illustration.svg` (a fist bump, below the contact form) is drawn the same way. If the palette changes, update those two colors in both SVGs too.
 - The site is light only. There is no dark mode.
 - Calendly ignores the `pageSettings` colors in `CalendlyEmbed.tsx` on free plans, and its iframe can't be styled from here. Instead the iframe uses `mix-blend-mode: multiply` over a `bg-bg` wrapper, which turns its white background into the theme cream. Don't put a fill color on the containers around it, or the blend picks that color up.

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { CalendarIcon } from "./Icons";
+import { CalendarIcon, ProfileIcon } from "./Icons";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -22,9 +22,9 @@ const Navbar = () => {
             href="#top"
             onClick={close}
             aria-label="Back to top"
-            className="flex h-9 w-9 items-center justify-center rounded-full border-[1.5px] border-accent font-serif text-sm text-accent transition-transform duration-150 hover:scale-[0.875]"
+            className="flex h-9 w-9 items-center justify-center text-accent transition-transform duration-150 hover:scale-[0.875]"
           >
-            JL
+            <ProfileIcon className="h-6 w-6" />
           </a>
           <button
             type="button"
