@@ -26,7 +26,6 @@ const socialIcons = { LinkedIn: LinkedInIcon, GitHub: GitHubIcon };
  */
 const Sidebar = () => (
   <aside
-    id="top"
     className="flex flex-col gap-6 bg-ink-5 px-6 pb-6 pt-[calc(var(--menu-height)+24px)] sm:items-center sm:px-16 sm:pb-16 sm:pt-[calc(var(--menu-height)+60px)] lg:fixed lg:inset-y-0 lg:left-0 lg:w-[var(--side-width)] lg:items-stretch lg:overflow-y-auto lg:border-r lg:border-ink-10 lg:bg-transparent lg:p-6"
   >
     <div className="flex w-full flex-col gap-6 border-b border-ink-10 pb-6 sm:max-w-[var(--content-width)] sm:flex-row sm:pb-8 lg:max-w-none lg:flex-col lg:gap-12">

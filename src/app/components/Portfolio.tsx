@@ -12,6 +12,8 @@ import Footer from "./Footer";
 /** The full one-page portfolio, shared by every locale route. */
 const Portfolio = () => (
   <>
+    {/* Target for "Back to Top" and the logo. Not on the sidebar: it's fixed on desktop, so there'd be nothing to scroll to. */}
+    <div id="top" />
     <Navbar />
     <Sidebar />
     <div className="lg:ml-[var(--side-width)]">

@@ -57,5 +57,5 @@ A warm, minimal resume layout inspired by kozoriz.com.
 
 ## Content notes
 
-- Years of experience is currently **10+**. It's written out in the Hero, Sidebar, About, `layout.tsx` (metadata and JSON-LD) and the en-US/en-GB page metadata. Change all of them together; `grep -rn "+ years" src` finds every one. The README still says 9+.
+- Years of experience is currently **10+**. It's written out in the Hero, Sidebar, About, `layout.tsx` (metadata and JSON-LD) and the metadata of every locale page, including the translated de/es/fr descriptions ("über 10 Jahre", "más de 10 años", "plus de 10 ans"). Change all of them together; `grep -rnE "10\+? ?(years|Jahre|años|ans)" src` finds every one. The README still says 9+.
 - The site links LinkedIn `/in/javier-luansing-958628a4/` (from `profile.ts`). An older `/in/luansingjavier/` URL was used on the previous Contact section; confirm which one is current.
