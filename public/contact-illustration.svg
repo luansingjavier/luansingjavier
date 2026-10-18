@@ -1,0 +1,43 @@
+<!-- Original illustration for luansingjavier.info: two arms meeting in a fist bump, with floating icons. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" fill="none" stroke="#e55639" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Broken swooshes behind -->
+  <path d="M120 60C78 44 40 46 36 60c-3 10 14 20 40 26"/>
+  <path d="M206 150c40 14 76 14 80 0 3-10-12-20-38-28"/>
+  <path d="M196 54c22-20 50-26 58-16"/>
+
+  <!-- Left arm: solid sleeve, bare forearm -->
+  <path d="M60 98l52-4c2 0 4 2 4 4v26c0 2-2 4-4 4l-52 4Z" fill="#fbf5ef"/>
+  <path d="M14 92l48-4 4 50-48 4c-3 0-5-2-5-5l-4-40c0-3 2-5 5-5Z" fill="#e55639"/>
+  <path d="M58 90l4 46" stroke="#fbf5ef"/>
+
+  <!-- Left fist -->
+  <rect x="108" y="86" width="54" height="46" rx="15" fill="#fbf5ef"/>
+  <path d="M116 92c8-10 26-10 34-2"/>
+  <path d="M146 99h14M146 110h15M146 121h13"/>
+
+  <!-- Right arm: outlined sleeve with stripes -->
+  <path d="M260 96l-52-2c-2 0-4 2-4 4v26c0 2 2 4 4 4l52 4Z" fill="#fbf5ef"/>
+  <path d="M306 88l-48-2-4 52 48 2c3 0 5-2 5-5l4-42c0-3-2-5-5-5Z" fill="#fbf5ef"/>
+  <path d="M284 88l-3 51M294 89l-3 50"/>
+
+  <!-- Right fist -->
+  <rect x="164" y="84" width="54" height="46" rx="15" fill="#fbf5ef"/>
+  <path d="M210 90c-8-10-26-10-34-2"/>
+  <path d="M180 97h-14M180 108h-15M180 119h-13"/>
+
+  <!-- Burst where they meet -->
+  <path d="M163 72V58M149 76l-7-11M177 76l7-11M163 146v14M149 142l-7 11M177 142l7 11"/>
+
+  <!-- Floating icons -->
+  <rect x="44" y="20" width="26" height="18" rx="2" fill="#fbf5ef"/>
+  <path d="m44 22 13 9 13-9"/>
+  <path d="M244 20h28a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-16l-7 6v-6h-5a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4Z" fill="#fbf5ef"/>
+  <path d="M252 30h16"/>
+  <circle cx="270" cy="176" r="11" fill="#e55639"/>
+  <path d="m265 176 4 4 7-8" stroke="#fbf5ef"/>
+  <path d="M56 160c-4-7-16-4-13 5 2 6 13 12 13 12s11-6 13-12c3-9-9-12-13-5Z" fill="#fbf5ef"/>
+  <path d="M110 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2Z" fill="#e55639" stroke="none"/>
+  <path d="M220 178l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5Z"/>
+  <circle cx="300" cy="64" r="2.5" fill="#e55639" stroke="none"/>
+  <circle cx="22" cy="176" r="2" fill="#e55639" stroke="none"/>
+</svg>

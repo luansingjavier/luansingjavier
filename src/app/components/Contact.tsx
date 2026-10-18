@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { EMAIL, socialLinks } from "./profile";
 import { CheckIcon, GitHubIcon, LinkedInIcon } from "./Icons";
 import { Dot } from "./Experience";
@@ -269,6 +270,15 @@ const Contact = () => {
             })}
           </ul>
         </div>
+
+        <Image
+          src="/contact-illustration.svg"
+          alt=""
+          width={320}
+          height={200}
+          unoptimized
+          className="mx-auto mt-14 h-auto w-60 sm:mt-[72px] sm:w-80"
+        />
       </section>
     </>
   );

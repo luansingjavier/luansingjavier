@@ -1,17 +1,19 @@
 import React from "react";
+import Image from "next/image";
 import { experienceData } from "./profile";
 import { ArrowRightIcon } from "./Icons";
 
 const Hero = () => (
   <section className="flex flex-col items-center gap-6 pb-[88px] pt-[calc(var(--menu-height)+88px)] sm:pb-[104px] sm:pt-40">
-    <p className="inline-flex items-center gap-2 bg-ink-5 px-3 py-1.5 text-sm">
-      <span className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60 motion-reduce:hidden" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-      </span>
-      Available for freelance &amp; remote work
-    </p>
-
+    <Image
+      src="/hero-illustration.svg"
+      alt=""
+      width={240}
+      height={176}
+      priority
+      unoptimized
+      className="mb-4 h-44 w-60"
+    />
     <div className="flex flex-col items-center gap-2.5 text-center">
       <h1 className="h1 max-w-[400px]">Full-Stack &amp; Mobile Developer</h1>
       <p className="max-w-[480px] text-lg text-ink-60">
@@ -31,7 +33,7 @@ const Hero = () => (
             <span
               key={exp.company}
               className={`flex h-6 w-6 items-center justify-center rounded-full border border-bg bg-ink text-[9px] font-medium tracking-normal text-bg ${
-                i > 0 ? "-ml-2.5" : ""
+                i > 0 ? "-ml-1" : ""
               }`}
             >
               {exp.initials}
