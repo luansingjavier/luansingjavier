@@ -1,9 +1,18 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Stars from "./components/Stars";
+import { Geist, Habibi } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const geist = Geist({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-geist",
+});
+
+const habibi = Habibi({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-habibi",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://luansingjavier.info"),
@@ -13,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Javier Luansing - Full-Stack Developer",
   },
   description:
-    "Senior Full-Stack & Mobile Developer with 8+ years of experience in React Native, React, TypeScript, and Node.js. Specializing in scalable mobile and web applications, cloud solutions, and enterprise software development. Available for freelance and remote opportunities.",
+    "Senior Full-Stack & Mobile Developer with 10+ years of experience in React Native, React, TypeScript, and Node.js. Specializing in scalable mobile and web applications, cloud solutions, and enterprise software development. Available for freelance and remote opportunities.",
   keywords: [
     "Javier Luansing",
     "Full-Stack Developer",
@@ -51,7 +60,7 @@ export const metadata: Metadata = {
     title:
       "Javier Luansing - Full-Stack & Mobile Developer | React Native Expert",
     description:
-      "Senior Full-Stack & Mobile Developer with 8+ years of experience specializing in React Native, React, and cloud-based solutions. Building scalable, high-performance applications.",
+      "Senior Full-Stack & Mobile Developer with 10+ years of experience specializing in React Native, React, and cloud-based solutions. Building scalable, high-performance applications.",
     siteName: "Javier Luansing Portfolio",
     images: [
       {
@@ -66,7 +75,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Javier Luansing - Full-Stack & Mobile Developer",
     description:
-      "Senior Full-Stack & Mobile Developer with 8+ years of experience in React Native, React, TypeScript, and Node.js. Available for freelance opportunities.",
+      "Senior Full-Stack & Mobile Developer with 10+ years of experience in React Native, React, TypeScript, and Node.js. Available for freelance opportunities.",
     images: ["/profile.jpg"],
     creator: "@luansingjavier",
   },
@@ -107,7 +116,7 @@ export default function RootLayout({
     name: "Javier Luansing",
     jobTitle: "Full-Stack & Mobile Developer",
     description:
-      "Senior Full-Stack & Mobile Developer with 8+ years of experience specializing in React Native, React, TypeScript, and Node.js",
+      "Senior Full-Stack & Mobile Developer with 10+ years of experience specializing in React Native, React, TypeScript, and Node.js",
     url: "https://luansingjavier.info",
     image: "https://luansingjavier.info/profile.jpg",
     sameAs: [
@@ -147,17 +156,14 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${geist.variable} ${habibi.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>
-        <Stars />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

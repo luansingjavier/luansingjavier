@@ -26,7 +26,9 @@ const CalendlyEmbed: React.FC<CalendlyEmbedProps> = ({ url }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: isLoaded ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className="w-full"
+        // Calendly only applies custom colors on paid plans, so multiply-blend
+        // its iframe onto the page color: white becomes the theme cream.
+        className="w-full bg-bg [&_iframe]:mix-blend-multiply"
       >
         <InlineWidget
           url={url}
@@ -35,11 +37,11 @@ const CalendlyEmbed: React.FC<CalendlyEmbedProps> = ({ url }) => {
             width: "100%",
           }}
           pageSettings={{
-            backgroundColor: "121212",
+            backgroundColor: "fbf5ef",
             hideEventTypeDetails: false,
             hideLandingPageDetails: false,
-            primaryColor: "946fff",
-            textColor: "ffffff",
+            primaryColor: "e55639",
+            textColor: "1a0a06",
           }}
           prefill={{
             email: "",
@@ -65,7 +67,7 @@ const CalendlyEmbed: React.FC<CalendlyEmbedProps> = ({ url }) => {
         >
           <div className="flex flex-col items-center">
             <div className="animate-spin rounded-full h-12 w-12 border-2 border-t-accent border-r-accent border-b-transparent border-l-transparent mb-4"></div>
-            <p className="text-gray-400">Loading calendar...</p>
+            <p className="text-sm text-ink-60">Loading calendar...</p>
           </div>
         </motion.div>
       )}
