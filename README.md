@@ -66,7 +66,8 @@ _Bachelor of Science in Information Technology (2012 - 2016)_
 
 ## 📜 Certifications
 
-- **React, Node.js, Express & MongoDB - The MERN Fullstack Guide** (Udemy, Sep 2022)
-- **The Complete React Native + Hook Course** (Udemy, Sep 2022)
+- **Claude Code 101** (Claude Academy, Oct 2026) · [Verify](https://academy.claude.com/verify/4c3dc3a7e9621f50ad01fa1b68f357af)
+- **React, Node.js, Express & MongoDB - The MERN Fullstack Guide** (Udemy, Sep 2022) · [Verify](https://udemy-certificate.s3.amazonaws.com/pdf/UC-e22a608e-06ad-47b9-b544-e08c3ffba022.pdf)
+- **The Complete React Native + Hook Course** (Udemy, Sep 2022) · [Verify](https://udemy-certificate.s3.amazonaws.com/pdf/UC-d7f784b7-bfef-48cd-bd2d-bd1509120301.pdf)
 
 💡 Open to **collaborations, freelance opportunities, and remote roles**! Feel free to connect. 🚀
